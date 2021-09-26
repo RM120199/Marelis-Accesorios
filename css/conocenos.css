@@ -1,0 +1,60 @@
+
+body{
+    background: #EEDEDE;
+}
+
+header{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-direction: column;
+}
+
+.cabecera{
+    text-align: center;
+}
+
+.contenedor{
+    height: 800px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+}
+
+.informacion{
+    grid-column-start: 1 ;
+    grid-column-end: 3 ;
+}
+
+.card{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@media screen and (max-width: 1330px) {
+    .contenedor{
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3 , auto);
+    }
+
+    .lugares{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+
+}
+
+
+
+
+
